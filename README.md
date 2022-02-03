@@ -23,7 +23,7 @@ module "vpc-flow-logs" {
 
 ## Examples
 
-* [VPC flow logs](https://github.com/native-cube/terraform-aws-vpc-flow-logs/tree/master/examples/core)
+* [VPC flow logs](https://github.com/native-cube/terraform-aws-vpc-flow-logs/tree/main/examples/core)
 
 <!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 ## Requirements
