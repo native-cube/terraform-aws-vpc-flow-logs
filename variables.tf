@@ -3,11 +3,6 @@ variable "name_prefix" {
   type        = string
 }
 
-variable "vpc_id" {
-  type        = string
-  description = "VPC ID where resources will be created and flow logs enabled."
-}
-
 variable "tags" {
   type        = map(string)
   description = "Default tags attached to all resources."
@@ -36,4 +31,28 @@ variable "max_aggregation_interval" {
   type        = string
   description = "The maximum interval of time during which a flow of packets is captured and aggregated into a flow log record. Valid Values: 60 seconds (1 minute) or 600 seconds (10 minutes)"
   default     = "600"
+}
+
+variable "vpc_id" {
+  type        = string
+  description = "VPC ID where resources will be created and flow logs enabled."
+  default     = null
+}
+
+variable "subnet_id" {
+  type        = string
+  description = "Subnet ID to attach to."
+  default     = null
+}
+
+variable "transit_gateway_id" {
+  type        = string
+  description = "Transit Gateway ID to attach to."
+  default     = null
+}
+
+variable "transit_gateway_attachment_id" {
+  type        = string
+  description = "Transit Gateway Attachment ID to attach to."
+  default     = null
 }
