@@ -1,5 +1,5 @@
 resource "aws_cloudwatch_log_group" "flow_logs" {
-  name = "${var.name_prefix}-flow-logs"
+  name = var.cloudwatch_log_group_name != null ? var.cloudwatch_log_group_name : "${var.name_prefix}-flow-logs"
 
   retention_in_days = var.retention_in_days
   kms_key_id        = var.kms_key_id
