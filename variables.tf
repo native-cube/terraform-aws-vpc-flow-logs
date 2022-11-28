@@ -56,3 +56,9 @@ variable "transit_gateway_attachment_id" {
   description = "Transit Gateway Attachment ID to attach to."
   default     = null
 }
+
+variable "cloudwatch_log_group_name" {
+  description = "Custom name used for cloudwatch log group"
+  type        = string
+  default     = null
+}
