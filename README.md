@@ -8,7 +8,7 @@ Terraform module for enabling AWS VPC flow logs.
 ```hcl
 module "vpc-flow-logs" {
   source = "native-cube/vpc-flow-logs/aws"
-  version = "~> 2.1.0"
+  version = "~> 2.2"
 
   name_prefix = "native-cube-example"
   vpc_id      = "vpc-123456789"
