@@ -25,12 +25,13 @@ resource "aws_iam_role" "flow_logs" {
     }
   )
 
-  inline_policy {
-    name   = "cloudwatch-policy"
-    policy = data.aws_iam_policy_document.cloudwatch.json
-  }
-
   tags = var.tags
+}
+
+resource "aws_iam_role_policy" "flow_logs" {
+  name   = "cloudwatch-policy"
+  role   = aws_iam_role.flow_logs.id
+  policy = data.aws_iam_policy_document.cloudwatch.json
 }
 
 resource "aws_flow_log" "flow_logs" {
