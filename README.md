@@ -25,7 +25,7 @@ module "vpc-flow-logs" {
 
 * [VPC flow logs](https://github.com/native-cube/terraform-aws-vpc-flow-logs/tree/main/examples/core)
 
-<!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
+<!-- BEGIN_TF_DOCS -->
 ## Requirements
 
 | Name | Version |
@@ -50,6 +50,7 @@ No modules.
 | [aws_cloudwatch_log_group.flow_logs](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/cloudwatch_log_group) | resource |
 | [aws_flow_log.flow_logs](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/flow_log) | resource |
 | [aws_iam_role.flow_logs](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/iam_role) | resource |
+| [aws_iam_role_policy.flow_logs](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/iam_role_policy) | resource |
 | [aws_iam_policy_document.cloudwatch](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/data-sources/iam_policy_document) | data source |
 
 ## Inputs
@@ -76,7 +77,7 @@ No modules.
 | <a name="output_flow_logs_id"></a> [flow\_logs\_id](#output\_flow\_logs\_id) | The Flow Log ID. |
 | <a name="output_flow_logs_role_arn"></a> [flow\_logs\_role\_arn](#output\_flow\_logs\_role\_arn) | The ARN specifying the role used by Flow Logs. |
 | <a name="output_flow_logs_role_id"></a> [flow\_logs\_role\_id](#output\_flow\_logs\_role\_id) | The ID specifying the role used by Flow Logs. |
-<!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
+<!-- END_TF_DOCS -->
 
 ## License
 
