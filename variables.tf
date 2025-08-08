@@ -62,3 +62,9 @@ variable "cloudwatch_log_group_name" {
   type        = string
   default     = null
 }
+
+variable "log_format" {
+  description = "Custom format for flow log records"
+  type        = string
+  default     = null
+}

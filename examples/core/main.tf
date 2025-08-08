@@ -22,6 +22,7 @@ module "flow-logs" {
   traffic_type = "ALL"
   # retention_in_days = 30
   # max_aggregation_interval = 60
+  # log_format = "$${interface-id} $${account-id} $${srcaddr} $${dstaddr} $${srcport} $${dstport} $${action} $${log-status}"
 
   tags = {
     Environment = "test"
