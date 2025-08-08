@@ -48,5 +48,7 @@ resource "aws_flow_log" "flow_logs" {
 
   max_aggregation_interval = var.max_aggregation_interval
 
+  log_format = var.log_format
+
   tags = var.tags
 }
